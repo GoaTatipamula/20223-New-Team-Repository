@@ -13,7 +13,10 @@ import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
 
 public class Constants {
     public static FollowerConstants followerConstants = new FollowerConstants()
-            .mass(6.713); // mass in kg
+            .mass(6.713) // mass in kg
+            .forwardZeroPowerAcceleration(-35.21275688137097) // fine tune again with a 100% battery and mats
+            .lateralZeroPowerAcceleration(-47.46445859453014);
+
 
     public static MecanumConstants driveConstants = new MecanumConstants()
             .maxPower(1.0)
@@ -24,18 +27,20 @@ public class Constants {
             .leftFrontMotorDirection(DcMotorSimple.Direction.REVERSE)
             .leftRearMotorDirection(DcMotorSimple.Direction.REVERSE)
             .rightFrontMotorDirection(DcMotorSimple.Direction.FORWARD)
-            .rightRearMotorDirection(DcMotorSimple.Direction.FORWARD);
+            .rightRearMotorDirection(DcMotorSimple.Direction.FORWARD)
+            .xVelocity(58.795790784940934)
+            .yVelocity(52.79256649467889);
 
     public static PathConstraints pathConstraints = new PathConstraints(0.99, 100, 1, 1);
 
     public static PinpointConstants localizerConstants = new PinpointConstants()
             .forwardPodY(-4.6) // Distance in inches from center of rotation along Y-axis
-            .strafePodX(-4.6)  // Distance in inches from center of rotation along X-axis
+            .strafePodX(-5.22)  // Distance in inches from center of rotation along X-axis
             .distanceUnit(DistanceUnit.INCH)
             .hardwareMapName("pinpoint") // Name configured in FTC Driver Station I2C bus
             .encoderResolution(GoBildaPinpointDriver.GoBildaOdometryPods.goBILDA_4_BAR_POD) // Change to your specific pod type if different
             .forwardEncoderDirection(GoBildaPinpointDriver.EncoderDirection.FORWARD)
-            .strafeEncoderDirection(GoBildaPinpointDriver.EncoderDirection.FORWARD);
+            .strafeEncoderDirection(GoBildaPinpointDriver.EncoderDirection.REVERSED);
 
     public static Follower createFollower(HardwareMap hardwareMap) {
         return new FollowerBuilder(followerConstants, hardwareMap)
