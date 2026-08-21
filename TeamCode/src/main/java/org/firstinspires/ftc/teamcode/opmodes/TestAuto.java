@@ -36,7 +36,7 @@ public class TestAuto extends LinearOpMode {
     public void runOpMode() {
         follower = Constants.createFollower(hardwareMap);
         follower.setStartingPose(startPose);
-        follower.setMaxPower(0.25   );
+        follower.setMaxPower(0.25);
 
         buildPaths();
 
