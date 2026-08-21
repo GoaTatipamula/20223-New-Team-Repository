@@ -34,7 +34,7 @@ public class Constants {
     public static PathConstraints pathConstraints = new PathConstraints(0.99, 100, 1, 1);
 
     public static PinpointConstants localizerConstants = new PinpointConstants()
-            .forwardPodY(-4.6) // Distance in inches from center of rotation along Y-axis
+            .forwardPodY(-4.65) // Distance in inches from center of rotation along Y-axis
             .strafePodX(-5.22)  // Distance in inches from center of rotation along X-axis
             .distanceUnit(DistanceUnit.INCH)
             .hardwareMapName("pinpoint") // Name configured in FTC Driver Station I2C bus
