@@ -6,8 +6,8 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import org.firstinspires.ftc.teamcode.subsystems.IntakeSubsystem;
 import org.firstinspires.ftc.teamcode.subsystems.MecanumDriveSubsystem;
 
-@TeleOp(name = "DriveIntake", group = "TeleOp")
-public class DriveIntake extends OpMode {
+@TeleOp(name = "TeleOp_DriveIntake", group = "TeleOp")
+public class TeleOp_DriveIntake extends OpMode {
 
     // Subsystem instances
     private final MecanumDriveSubsystem drive = new MecanumDriveSubsystem();
