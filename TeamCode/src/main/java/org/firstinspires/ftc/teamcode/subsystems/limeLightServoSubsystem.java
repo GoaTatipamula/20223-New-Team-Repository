@@ -25,6 +25,14 @@ public class limeLightServoSubsystem {
     //moves servo to a user specifed position
     public void moveToPosistion(double position){
         servo.setPosition(position);
+        if position <= 0.5)
+        {
+            isup = false;
+        }
+        else
+        {
+            isup = true;
+        }
     }
 
     public double getServoPosition(){
