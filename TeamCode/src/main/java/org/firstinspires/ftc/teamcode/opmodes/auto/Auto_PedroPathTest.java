@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.opmodes;
+package org.firstinspires.ftc.teamcode.opmodes.auto;
 
 import com.pedropathing.follower.Follower;
 import com.pedropathing.geometry.BezierLine;
@@ -9,8 +9,8 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 import org.firstinspires.ftc.teamcode.pedroPathing.Constants;
 
-@Autonomous(name = "Pedro Test Auto", group = "Autonomous")
-public class TestAuto extends LinearOpMode {
+@Autonomous(name = "Auto_PedroPathTest", group = "Autonomous")
+public class Auto_PedroPathTest extends LinearOpMode {
 
     private Follower follower;
 

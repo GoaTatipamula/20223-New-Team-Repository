@@ -1,5 +1,5 @@
 
-package org.firstinspires.ftc.teamcode.pedro;
+package org.firstinspires.ftc.teamcode.opmodes.auto;
 
 import com.pedropathing.api.PoseFactory;
 import com.pedropathing.follower.Follower;
@@ -10,10 +10,12 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 
+import org.firstinspires.ftc.teamcode.pedroPathing.Constants;
+
 import static com.pedropathing.api.Paths.line;
 
-@Autonomous(name = "Test Auto", group = "Autonomous")
-public class TestAuto extends OpMode {
+@Autonomous(name = "Auto_DriveOuttakeTest", group = "Autonomous")
+public class Auto_DriveOuttakeTest extends OpMode {
 
     private Follower follower;
 
